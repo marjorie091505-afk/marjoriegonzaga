@@ -8,7 +8,7 @@ const name = "marjoriev gonzaga";
 const position = "Web Developer / 	Software Engineer";
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,11 +18,14 @@ const position = "Web Developer / 	Software Engineer";
 		<title> {name} | {position} </title>
 	</head>
 	<body>
-        <Header />
-        <slot />
-        <Footer />
-        <script>   
-            import "../scripts/animation.js";
-        </script>
+		<div id="progressBar" aria-hidden="true"></div>
+		<Header />
+		<main class="max-w-[1100px] w-[90%] my-10 mx-auto">
+			<slot />
+		</main>
+		<Footer />
+		<script>
+			import "../scripts/animation.js";
+		</script>
 	</body>
 </html>
