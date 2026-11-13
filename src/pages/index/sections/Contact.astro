@@ -1,0 +1,45 @@
+<section id="contact" class="bg-pink-100 dark:bg-gray-800 rounded-3xl p-10 shadow-xl mb-10 reveal">
+	<h2 class="text-3xl md:text-4xl text-pink-800 dark:text-pink-200 mb-6">Reserve Order</h2>
+	<p class="mb-8">Have a project idea or want to connect? Send me a message!</p>
+	<form id="contactForm" class="flex flex-col gap-5">
+		<div>
+			<label for="name" class="font-bold mb-2 block">Full Name</label>
+			<input
+				type="text"
+				id="name"
+				name="name"
+				placeholder="Enter your name"
+				required
+				class="w-full p-4 rounded-2xl bg-pink-50 dark:bg-gray-900 border-none shadow-inner outline-none focus:ring-2 focus:ring-pink-400"
+			/>
+		</div>
+		<div>
+			<label for="email" class="font-bold mb-2 block">Email Address</label>
+			<input
+				type="email"
+				id="email"
+				name="email"
+				placeholder="Enter your email"
+				required
+				class="w-full p-4 rounded-2xl bg-pink-50 dark:bg-gray-900 border-none shadow-inner outline-none focus:ring-2 focus:ring-pink-400"
+			/>
+		</div>
+		<div>
+			<label for="message" class="font-bold mb-2 block">Message / Request</label>
+			<textarea
+				id="message"
+				name="message"
+				rows="3"
+				placeholder="Write your message here..."
+				required
+				class="w-full p-4 rounded-2xl bg-pink-50 dark:bg-gray-900 border-none shadow-inner outline-none focus:ring-2 focus:ring-pink-400"
+			></textarea>
+		</div>
+		<button
+			type="submit"
+			class="bg-pink-400 text-white font-bold py-4 px-8 rounded-2xl shadow-lg hover:bg-pink-500 transition-colors w-fit mt-2"
+		>
+			Send Message
+		</button>
+	</form>
+</section>
